@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_nuevo",
+  "version": "1.0.0",
+  "description": "Este es un ejemplo de prueba",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "babel compilado -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
