@@ -1,4 +1,4 @@
-import { Layout } from "../../components/layout/Layout";
+import { Layout } from "../../components/Layout/Layout";
 import { useLocation } from 'react-router-dom';
 
 const ProductDetails = () => {
