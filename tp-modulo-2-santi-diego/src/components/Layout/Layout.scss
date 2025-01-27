@@ -1,0 +1,65 @@
+$primary-color: #fd3d0d; // Color primario
+$background-color: #f8f9fa; // Color de fondo para el navbar
+$text-color: #343a40; // Color del texto
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal se expanda */
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Color de fondo */
+}
+
+// Estilo del navbar
+.navbar {
+  background-color: $background-color;
+  .navbar-brand {
+    color: $primary-color;
+    font-weight: bold;
+    &:hover {
+      color: darken($primary-color, 10%);
+    }
+  }
+  .nav-link {
+    color: $text-color;
+    &:hover {
+      color: lighten($text-color, 10%);
+    }
+    &.active {
+      color: $primary-color;
+    }
+  }
+  .dropdown-toggle {
+    background-color: $primary-color;
+    color: #fff;
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+  .dropdown-menu {
+    background-color: $background-color;
+    .dropdown-item {
+      color: $text-color;
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}
