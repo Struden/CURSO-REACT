@@ -12,9 +12,9 @@ const ProductDetails = () => {
 
     return(
         <Layout>
-            <div class="container my-4">
-                <div class="row align-items-center">                
-                    <div class="col-md-4 text-center">
+            <div className="container my-4">
+                <div className="row align-items-center">                
+                    <div className="col-md-4 text-center">
                     {
                         <div id={`carrousel-${producto.id}`} className="carousel slide">
                         <div className="carousel-inner">
@@ -44,13 +44,13 @@ const ProductDetails = () => {
                         }
                     </div>
 
-                    <div class="col-md-8">
-                    <h2 class="fw-bold">{producto.title}</h2>
-                    <p class="text-muted">
+                    <div className="col-md-8">
+                    <h2 className="fw-bold">{producto.title}</h2>
+                    <p className="text-muted">
                         {producto.description}
                     </p>
-                    <h4 class="text-primary">$99.99</h4>
-                    <button class="btn btn-success mt-3" onClick={handlerClick}>Comprar</button>
+                    <h4 className="text-primary">$99.99</h4>
+                    <button className="btn btn-success mt-3" onClick={handlerClick}>Comprar</button>
                     </div>
                 </div>
             </div>
