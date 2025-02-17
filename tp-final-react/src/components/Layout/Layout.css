@@ -1,0 +1,26 @@
+html, body, #root {
+    height: 100%; /* 🔹 Asegura que el body ocupe toda la pantalla */
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    flex-grow: 1; /* 🔹 Asegura que main crezca */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Color de fondo */
+  }
+
+  .navbar {
+    background-color: #000000 !important;
+  }
