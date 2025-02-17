@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { auth, googleProvider } from "../config/Firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 import { useAuth } from "../context/UsuarioLogueado";
 
@@ -67,7 +67,6 @@ const Login = () => {
                       />
                       </div>
 
-                      {/* Contraseña */}
                       <div className="mb-3">
                       <label className="form-label">Contraseña</label>
                       <input
@@ -80,7 +79,6 @@ const Login = () => {
                       />
                       </div>
 
-                      {/* Botón de Login */}
                       <div className="d-grid">
                       <button type="submit" className="btn btn-primary">
                           Iniciar Sesión
@@ -90,16 +88,14 @@ const Login = () => {
 
                   <hr />
 
-                  {/* Botón de Google */}
                   <div className="d-grid">
                       <button onClick={handleGoogleLogin} className="btn btn-danger">
                       <i className="bi bi-google me-2"></i> Iniciar con Google
                       </button>
                   </div>
 
-                  {/* Enlace a Registro */}
                   <p className="mt-3 text-center">
-                      ¿No tienes cuenta? <a href="/registrar">Regístrate aquí</a>
+                      ¿No tienes cuenta? <Link  to="/registrar-usuario">Registrate aquí</Link>
                   </p>
                   </div>
               </div>
